@@ -1,0 +1,17 @@
+#divUpdate {
+    display: flex;
+    margin: 25px 100px;
+    padding: 20px 188px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+#consulta {
+    overflow: visible;
+    width: 100%;
+}

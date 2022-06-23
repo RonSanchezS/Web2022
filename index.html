@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html id="top">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="listaBD.css" />
+  <link rel="stylesheet" href="crear.css" />
+  <link rel="stylesheet" href="cargar.css" />
+  <link rel="stylesheet" href="update.css" />
+  <link rel="stylesheet" href="delete.css" />
+  <link rel="stylesheet" href="divisores.css" />
+  <script src="cargarLaLista.js"></script>
+  <script src="insertarDatos.js"></script>
+  <script src="mostrarTablas.js"></script>
+  <script src="mostrarOtraT.js"></script>
+  <script src="update.js"></script>
+  <script src="delete.js"></script>
+
+</head>
+
+<body onload="cargarLista(), obtenerTablas(), obtenerTabla2(), obtenerTabla3(), obtenerTabla4()">
+  <main>
+    <div id="divInicio">
+      <h1>Esta aplicación de escritorio ha sido creada gracias a Electron JS 💖</h1>
+      <h2>Gracias a ELECTRON y sus extensiones podemos:</h2>
+      <ul id="lista">
+      </ul>
+    </div>
+    <div id="divCRUD">
+      <nav id="barraNav">
+        <div class="divisorNav"><a href="#top" class="anchorInicio">Inicio</a></div>
+        <div class="divisorNav"><a href="#divCRUD" class="anchorInicio">Crear</a></div>
+        <div class="divisorNav"><a href="#divLeer" class="anchorInicio">Leer</a></div>
+        <div class="divisorNav"><a href="#divUpdate" class="anchorInicio">Actualizar</a></div>
+        <div class="divisorNav"><a href="#divDelete" class="anchorInicio">Eliminar</a></div>
+      </nav>
+      <div id="seleccionDeTabla">
+        <h3>Primero, selecciona la tabla que vas a modificar.</h3>
+
+        <!--
+        <button onclick="obtenerTablas()" value="Obtener Tablas">Obtener Tablas</button>
+       
+      --> <select id="selection">
+          <!-- .inputsGenerados -->
+        </select>
+      </div>
+      <div id="divCreacion">
+        <h3>Luego, A insertar datos en la BD</h3>
+        <button onclick="insertarDatos()" id="btnDato">Obtener los campos</button>
+        <div id="divCrear">
+
+        </div>
+        <div id="divAuxiliar">
+          <button onclick="mostrarConsulta()" value="mostrar Consulta">Insertar en la base de datos</button>
+        </div>
+      </div>
+      <div class="divLinea"></div>
+      <div id="divLeer">
+        <h3>Para leer los datos de una tabla:</h3>
+        <select id="selectTable">
+        </select>
+        <button id="botonSangron" onclick="poblarTabla()">Generar tabla</button>
+        <table id="tablaLeer">
+        </table>
+      </div>
+      <div class="divLinea"></div>
+
+      <div id="divUpdate">
+        <h3>¿Quieres eliminar datos de una tabla?</h3>
+        <select id="selectTable3">
+        </select>
+        <button onclick="poblarTabla2()">Poblar tabla</button>
+        <input type="text" id="consulta" disabled></input>
+        <button onclick="eliminar(), poblarTabla2()" id="btnEliminar">Eliminar</button>
+        <table id="tablaActualizar">
+        </table>
+      </div>
+      <div class="divLinea"></div>
+
+      <div id="divDelete">
+        <h3>Tal vez quieras realizar una actualización. ¡Te tenemos cubierto!</h3>
+        <select id="selectTable4">
+        </select>
+        <button onclick="poblarTablaUpdate()">poblar tabla</button>
+        <input type="text" id="llavePrimaria" disabled></input>
+        <div id="camposParaUpdate">
+          <!--Vacio - Codigo generado-->
+        </div>
+        <div id="miniDivDelete">
+        </div>
+        <table id="tablaActualizar2">
+        </table>
+        <div id="contenedorCarta">
+          <!--
+            <div id="card"></div>
+          -->
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1>💖 Hello World!</h1>
+  <p>Welcome to your Electron application.</p>
+</body>
+
+</html>

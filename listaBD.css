@@ -1,0 +1,33 @@
+#lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.elementoLista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #f16775;
+    box-shadow: 5px 5px 10px #bebebe,
+        -5px -5px 10px #ffffff;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+
+}
+
+.elementoLista>a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    color: #fee36e;
+    padding: 25px 5px;
+    transition: all 2s ease-in-out;
+}
+
+.elementoLista>a:hover,
+.elementoLista:hover {
+    background-color: #373e98;
+}

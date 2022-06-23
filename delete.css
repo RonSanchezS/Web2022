@@ -1,0 +1,36 @@
+#card {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #212121;
+    border-radius: 1rem;
+    color: #fff;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+}
+
+#card:hover {
+    text-align: center;
+    color: #f2295bf0;
+    transform: translateY(-1.5rem);
+    border: #f2295bf0 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+}
+
+#divDelete {
+    display: flex;
+    margin: 25px 100px;
+    padding: 20px 188px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}

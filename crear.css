@@ -1,0 +1,83 @@
+#divCreacion {
+    display: flex;
+    margin: 0px 100px;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 23px 23px 46px #ababab,
+        -23px -23px 46px #ffffff;
+    padding: 50px 180px;
+}
+
+
+a {
+    scroll-behavior: smooth;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#divCreacion button {
+    border: none;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 23px 23px 46px #ababab,
+        -23px -23px 46px #ffffff;
+    border-radius: 10px;
+    transition: all 0.75s ease-in-out;
+}
+
+#divCreacion button:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    border-radius: 5px;
+}
+
+#divCrear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+input {
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+    min-height: 30px;
+}
+
+#btnVerificar {
+    transition: all 0.75s ease-in-out
+}
+
+#btnVerificar:hover {
+    cursor: pointer;
+    background-color: #20aa0e;
+}
+
+select {
+    min-width: 100px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+option {
+    text-align: center;
+
+}
+
+#seleccionDeTabla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
